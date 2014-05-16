@@ -131,9 +131,9 @@ true
             <file
                 path="/home/chinedu/business/Snore/res/values/color.xml"
                 qualifiers="" >
-                <color name="grey" >#FFF2F2F2
-                </color>
                 <color name="color_three" >#E8AE37
+                </color>
+                <color name="grey" >#FFF2F2F2
                 </color>
                 <color name="blue" >#4182C1
                 </color>
@@ -141,9 +141,9 @@ true
                 </color>
                 <color name="black" >#000
                 </color>
-                <color name="dark_blue" >#113E93
-                </color>
                 <color name="color_two" >#E8AE37
+                </color>
+                <color name="dark_blue" >#113E93
                 </color>
                 <color name="color_one" >#BE3930
                 </color>
@@ -257,6 +257,17 @@ true
             <file
                 name="sphere_48"
                 path="/home/chinedu/business/Snore/res/drawable/sphere_48.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                path="/home/chinedu/business/Snore/res/values/view_tags.xml"
+                qualifiers="" >
+                <string name="notification_id" >20140516
+                </string>
+            </file>
+            <file
+                name="sphere_24"
+                path="/home/chinedu/business/Snore/res/drawable/sphere_24.png"
                 qualifiers=""
                 type="drawable" />
         </source>
