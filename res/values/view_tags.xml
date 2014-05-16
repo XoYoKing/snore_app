@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- We don't use the values anywhere, but we use the existence of these values to guarantee uniqueness -->
+
+    <string name="notification_id">20140516</string>
+
+	
+</resources>

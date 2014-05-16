@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_app_settings"
+        android:title="@string/action_settings"/>
+  <item
+        android:id="@+id/action_snore_media"
+        android:title="@string/action_snore_files"/>
+</menu><!-- -->
+<!-- From: file:/home/chinedu/business/Snore/res/menu/snore.xml -->

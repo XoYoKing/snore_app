@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:left="1dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape>
+            <corners android:radius="0dp" />
+
+            <gradient
+                android:angle="45"
+                android:endColor="#E2E2E2"
+                android:startColor="#BABABA" />
+        </shape>
+    </item>
+    <item android:bottom="1.8dp">
+        <shape>
+            <solid android:color="#328aa1" />
+
+            <corners android:radius="0dp" />
+
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="10dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+
+</layer-list><!-- From: file:/home/chinedu/business/Snore/res/drawable/continue_button_enabled.xml -->

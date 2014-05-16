@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+	 <solid
+        android:color="#185772"  />
+</shape><!-- From: file:/home/chinedu/business/Snore/res/drawable/button_pressed.xml -->

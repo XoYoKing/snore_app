@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Snore</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_snore_files">My Snores</string>
+    <string name="action_app_menu">Menu</string>
+    <string name="snore_button">Start Snore</string>
+    <string name="stop_snoring">Stop Snore</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="max">max.</string>
+    <string name="want_to_delete">Want to delete this recording?</string>
+    <string name="yes">Yes</string>
+    <string name="trigger_time">Trigger Time:</string>
+    <string name="time">hh:mm</string>
+    <string name="recording_duration">Recording Duration:</string>
+    <string name="message">Recording is scheduled to begin in &lt;br> &lt;/br> &lt;b>%1$d (hours) and %2$d (minutes)&lt;/b>&lt;br> &lt;/br>Designed for recording snoring activity. Continue to wait, or exit the app.&lt;br> &lt;/br>&lt;br> &lt;/br> &lt;b>Note:&lt;/b> Manage and review recordings by accessing the app\'s menu setting.</string>
+
+</resources>
