@@ -5,9 +5,6 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.text.Html;
-import android.text.Spanned;
-import android.util.Log;
 
 import java.util.Calendar;
 

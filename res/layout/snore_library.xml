@@ -5,17 +5,25 @@
 
 
     android:orientation="vertical" >
-<!--  android:background="@drawable/bkgrd2"-->
+    <!--  android:background="@drawable/bkgrd2"-->
     <GridView
         android:id="@+id/snore_grid"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:horizontalSpacing="10dp"
+        android:horizontalSpacing="5dp"
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp" >
+        android:verticalSpacing="5dp" >
     </GridView>
+
+    <TextView android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/no_recordings" />
 
 </LinearLayout>

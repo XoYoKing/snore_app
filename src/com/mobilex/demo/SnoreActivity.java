@@ -2,7 +2,6 @@ package com.mobilex.demo;
 
 import java.lang.ref.WeakReference;
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.os.Message;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.text.Html;
-import android.text.Spanned;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -24,8 +22,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.mobilex.demo.ProgressThread.PROGRESS_STATE;
-
 public class SnoreActivity extends FragmentActivity {
     final static String TAG = "CHINEDU";
     final int ACTIVITY_RECORD_SOUND = 0;
@@ -36,6 +32,8 @@ public class SnoreActivity extends FragmentActivity {
     private ProgressThread mProgressThread;
     private TextView mDurationLabel;
     private FragmentManager mFragmentManager;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,7 +151,7 @@ public class SnoreActivity extends FragmentActivity {
         // mProgressThread = null;
         // }
         if (mProgressThread != null) {
-            mProgressThread.setProgressState(PROGRESS_STATE.DONE);
+            mProgressThread.setProgressState(ProgressThread.PROGRESS_STATE.DONE);
         }
 
     }
@@ -250,7 +248,7 @@ public class SnoreActivity extends FragmentActivity {
                     if (counter == limit) {
                         if (currentActivity.mProgressThread != null) {
                             currentActivity.mProgressThread
-                                    .setProgressState(PROGRESS_STATE.DONE);
+                                    .setProgressState(ProgressThread.PROGRESS_STATE.DONE);
                             currentActivity.stopSnoreService();
                         }
                     }

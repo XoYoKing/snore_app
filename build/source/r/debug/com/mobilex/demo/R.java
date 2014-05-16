@@ -46,9 +46,10 @@ public final class R {
         public static final int sphere_48=0x7f02000f;
     }
     public static final class id {
-        public static final int action_app_settings=0x7f0a000d;
-        public static final int action_snore_media=0x7f0a000e;
+        public static final int action_app_settings=0x7f0a000e;
+        public static final int action_snore_media=0x7f0a000f;
         public static final int cancel_button=0x7f0a000a;
+        public static final int empty_text=0x7f0a000d;
         public static final int label=0x7f0a0007;
         public static final int max_seek=0x7f0a0003;
         public static final int media_image=0x7f0a0006;
@@ -83,15 +84,16 @@ public final class R {
         public static final int cancel=0x7f070004;
         public static final int max=0x7f070005;
         public static final int message=0x7f070006;
-        public static final int notification_id=0x7f070007;
-        public static final int ok=0x7f070008;
-        public static final int recording_duration=0x7f070009;
-        public static final int snore_button=0x7f07000a;
-        public static final int stop_snoring=0x7f07000b;
-        public static final int time=0x7f07000c;
-        public static final int trigger_time=0x7f07000d;
-        public static final int want_to_delete=0x7f07000e;
-        public static final int yes=0x7f07000f;
+        public static final int no_recordings=0x7f070007;
+        public static final int notification_id=0x7f070008;
+        public static final int ok=0x7f070009;
+        public static final int recording_duration=0x7f07000a;
+        public static final int snore_button=0x7f07000b;
+        public static final int stop_snoring=0x7f07000c;
+        public static final int time=0x7f07000d;
+        public static final int trigger_time=0x7f07000e;
+        public static final int want_to_delete=0x7f07000f;
+        public static final int yes=0x7f070010;
     }
     public static final class style {
         /** 

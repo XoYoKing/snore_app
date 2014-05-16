@@ -16,5 +16,5 @@
     <string name="time">hh:mm</string>
     <string name="recording_duration">Recording Duration:</string>
     <string name="message">Recording is scheduled to begin in &lt;br> &lt;/br> &lt;b>%1$d (hours) and %2$d (minutes)&lt;/b>&lt;br> &lt;/br>Designed for recording snoring activity. Continue to wait, or exit the app.&lt;br> &lt;/br>&lt;br> &lt;/br> &lt;b>Note:&lt;/b> Manage and review recordings by accessing the app\'s menu setting.</string>
-
+    <string name="no_recordings">No recordings available!</string>
 </resources>

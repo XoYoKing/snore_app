@@ -59,7 +59,7 @@
 
                 <style
                     name="AppBaseTheme"
-                    parent="android:Theme.Light" >
+                    parent="android:Theme.Holo" >
 
                     <!--
             Theme customizations available in newer API levels can go in
@@ -103,6 +103,8 @@ true
                 </string>
                 <string name="want_to_delete" >Want to delete this recording?
                 </string>
+                <string name="no_recordings" >No recordings available!
+                </string>
                 <string name="message" >Recording is scheduled to begin in &lt;br> &lt;/br> &lt;b>%1$d (hours) and %2$d (minutes)&lt;/b>&lt;br> &lt;/br>Designed for recording snoring activity. Continue to wait, or exit the app.&lt;br> &lt;/br>&lt;br> &lt;/br> &lt;b>Note:&lt;/b> Manage and review recordings by accessing the app\'s menu setting.
                 </string>
                 <string name="snore_button" >Start Snore
@@ -131,9 +133,9 @@ true
             <file
                 path="/home/chinedu/business/Snore/res/values/color.xml"
                 qualifiers="" >
-                <color name="color_three" >#E8AE37
-                </color>
                 <color name="grey" >#FFF2F2F2
+                </color>
+                <color name="color_three" >#E8AE37
                 </color>
                 <color name="blue" >#4182C1
                 </color>
@@ -141,9 +143,9 @@ true
                 </color>
                 <color name="black" >#000
                 </color>
-                <color name="color_two" >#E8AE37
-                </color>
                 <color name="dark_blue" >#113E93
+                </color>
+                <color name="color_two" >#E8AE37
                 </color>
                 <color name="color_one" >#BE3930
                 </color>

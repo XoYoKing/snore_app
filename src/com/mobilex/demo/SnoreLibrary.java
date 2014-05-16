@@ -35,6 +35,8 @@ public class SnoreLibrary extends FragmentActivity {
         mGridView = (GridView) findViewById(R.id.snore_grid);
         final SnoreAdapter adapter = new SnoreAdapter(this);
         mGridView.setAdapter(adapter);
+        View view = findViewById(R.id.empty_text);
+        mGridView.setEmptyView(view);
         mGridView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {

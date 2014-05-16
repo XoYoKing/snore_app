@@ -103,14 +103,13 @@ public class SnoreService extends Service {
     }
 
     private void sendNotification() {
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.sphere_24)
                 .setContentTitle("1 Recording available")
+                .setAutoCancel(true)
                 .setContentText("Snore Recording");
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
         Intent notifyIntent =
-                new Intent(this, Settings.class);
+                new Intent(this, SnoreLibrary.class);
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         PendingIntent pendingIntent =
@@ -124,8 +123,6 @@ public class SnoreService extends Service {
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(R.string.notification_id, builder.build());
-
-
     }
 
     @Override
@@ -133,6 +130,7 @@ public class SnoreService extends Service {
         super.onDestroy();
         Log.d(TAG, "Snoring Service is being destroyed");
         stopRecording();
+        sendNotification();
 
     }
 

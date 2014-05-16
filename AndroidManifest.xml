@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.mobilex.demo.SnoreActivity"
+            android:name=".SnoreActivity"
          android:configChanges="keyboard|screenSize|keyboardHidden|orientation|screenLayout|uiMode"
             android:label="@string/app_name" >
             <intent-filter>
@@ -27,14 +27,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mobilex.demo.Settings"
+            android:name=".Settings"
             android:configChanges="keyboard|screenSize|keyboardHidden|navigation|orientation|screenLayout|uiMode" />
         <activity
-            android:name="com.mobilex.demo.SnoreLibrary"
+            android:name=".SnoreLibrary"
             android:configChanges="keyboard|screenSize|keyboardHidden|navigation|orientation|screenLayout|uiMode" />
         <!-- android:theme="@style/Theme.NoTitleBar.Dialog" -->
         <service
-            android:name="com.mobilex.demo.SnoreService"
+            android:name=".SnoreService"
             android:exported="false" >
         </service>
     </application>
