@@ -1,6 +1,8 @@
 package com.mobilex.demo;
 
 import java.lang.ref.WeakReference;
+import java.util.HashSet;
+import java.util.Set;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -22,6 +24,16 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
+
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdSize;
+//import com.google.android.gms.ads.AdView;
+
+
 public class SnoreActivity extends FragmentActivity {
     final static String TAG = "CHINEDU";
     final int ACTIVITY_RECORD_SOUND = 0;
@@ -32,7 +44,7 @@ public class SnoreActivity extends FragmentActivity {
     private ProgressThread mProgressThread;
     private TextView mDurationLabel;
     private FragmentManager mFragmentManager;
-
+    private AdView mAdView;
 
 
     @Override
@@ -41,12 +53,12 @@ public class SnoreActivity extends FragmentActivity {
         Log.d(TAG, "OnCreate called");
 
 
-        if (savedInstanceState == null) {
-            mFragmentManager = getSupportFragmentManager();
-            //FragmentTransaction transaction = mFragmentManager.beginTransaction();
+//        if (savedInstanceState == null) {
+//            mFragmentManager = getSupportFragmentManager();
+//            //FragmentTransaction transaction = mFragmentManager.beginTransaction();
+//        }
 
 
-        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_snore);
         initializeViews();
@@ -60,6 +72,20 @@ public class SnoreActivity extends FragmentActivity {
             }
         }
 
+        mAdView = (AdView)findViewById(R.id.ad);
+       // mAdView.setAdSize(AdSize.BANNER);
+        //mAdView.setAdUnitId(getString(R.string.admob_id));
+       // mAdView.setAdListener(new SnoreAdListener());
+        AdRequest adRequest = new AdRequest.Builder()
+
+                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                //.addTestDevice("4641194906cbc4b")
+
+                .addKeyword("sleep apnea, sleep doctor,pulmonary doctor,pulmonary specialist")
+                .build();
+
+      //  adRequest.addKeyword("sleep apnea, sleep doctor");
+        mAdView.loadAd(adRequest);
     }
 
     @Override
@@ -89,10 +115,19 @@ public class SnoreActivity extends FragmentActivity {
 //        }
 //    }
 
-
+@Override
+public void onPause(){
+    if (mAdView!=null){
+        mAdView.pause();;
+    }
+    super.onPause();;
+}
 
     @Override
     public void onResume() {
+        if (mAdView!=null){
+            mAdView.resume();;
+        }
         super.onResume();
         Log.d(TAG, "OnResume called.");
         // mProgressBar.setMax(SnoreData.getInstance().getMaxRecordingDuration());
@@ -101,6 +136,9 @@ public class SnoreActivity extends FragmentActivity {
 
     @Override
     public void onDestroy() {
+        if (mAdView!=null){
+            mAdView.destroy();
+        }
         super.onDestroy();
         Log.d(TAG, "OnDestroy called.");
     }

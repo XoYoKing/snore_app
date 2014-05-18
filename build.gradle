@@ -9,12 +9,43 @@ buildscript {
 apply plugin: 'android'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.google.android.gms:play-services:4.3.23'
+
+
 }
 
 android {
     compileSdkVersion 15
     buildToolsVersion "19.0.3"
+    signingConfigs {
+        release {
+            storeFile file("../my-release-key.keystore")
+            storePassword "gatlinbu32"
+            keyAlias "alias_name"
+            keyPassword "gatlinbu32"
+
+
+        }
+
+        buildTypes {
+            release {
+                debuggable false
+                signingConfig signingConfigs.release
+                runProguard true
+
+            }
+
+
+            defaultConfig {
+                minSdkVersion 9
+                targetSdkVersion 15
+                versionCode 1
+                versionName "1.0"
+            }
+        }
+    }
+
 
     sourceSets {
         main {

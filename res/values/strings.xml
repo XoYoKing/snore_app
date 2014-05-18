@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="admob_id">ca-app-pub-8055516700019805/1013661576</string>
     <string name="app_name">Snore</string>
     <string name="action_settings">Settings</string>
     <string name="action_snore_files">My Snores</string>
